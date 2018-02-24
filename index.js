@@ -89,12 +89,12 @@ $( "#button3" ).on( "click", function( event ) {
 $("#playButton").on( "click", function( event ) {
   if(audio.paused) {
     audio.play(); 
-    $("#playIcon").removeClass("fa fa-play");
-    $("#playIcon").addClass("fa fa-pause");
+    $(".playIcon").removeClass("fa fa-play");
+    $(".playIcon").addClass("fa fa-pause");
   } else {
     audio.pause();
-    $("#playIcon").removeClass("fa fa-pause");
-    $("#playIcon").addClass("fa fa-play");
+    $(".playIcon").removeClass("fa fa-pause");
+    $(".playIcon").addClass("fa fa-play");
   }
 });
 
